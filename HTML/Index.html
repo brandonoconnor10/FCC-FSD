@@ -2,34 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Movie Review</title>
+  <title>Multimedia Player</title>
 </head>
 <body>
 
-  <main>
-    <h1>Rise Beyond</h1>
+  <h1>My Multimedia Player</h1>
 
-    <img src="https://cdn.freecodecamp.org/curriculum/labs/rise-beyond-2.png" alt="Rise Beyond movie cover featuring a lone astronaut standing before a glowing planet">
+  <!-- Section 1: Audio -->
+  <section>
+    <h2>Sailing Away - Audio Track</h2>
+    <audio controls aria-label="Audio of the song Sailing Away">
+      <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mpeg">
+    </audio>
+  </section>
 
+  <!-- Section 2: Video -->
+  <section>
+    <h2>Understanding the map() Method - Video</h2>
+    <video controls width="600" aria-label="Video explanation of the JavaScript map method">
+      <source src="https://cdn.freecodecamp.org/curriculum/labs/What%20is%20the%20map%20method%20and%20how%20does%20it%20work.mp4" type="video/mp4">
+      <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    </video>
+  </section>
+
+  <!-- Section 3: Transcript -->
+  <section>
+    <h2>Transcript</h2>
     <p>
-      Set in a distant future, *Rise Beyond* follows Commander Elara as she defies intergalactic odds to reunite humanity across fractured colonies. A thrilling blend of emotion, sci-fi, and survival.
+      In this video, we'll explore the JavaScript <code>map()</code> method, which allows you to transform each element in an array and return a new array. You'll see several examples where map is used to modify data or extract parts of it.
     </p>
-
-    <p>
-      <strong>Movie Rating:</strong>
-      <span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span> (9.0/10)
-    </p>
-
-    <h2>Cast Members</h2>
-
-    <ul>
-      <li><strong>James Holloway</strong> as Ethan Carter</li>
-      <li><strong>Amira Wells</strong> as Commander Elara</li>
-      <li><strong>Luis Tran</strong> as Dr. Milo Vega</li>
-      <li><strong>Sophia Cheng</strong> as Lt. Iris Kade</li>
-      <li><strong>Derek Stone</strong> as Admiral Korran</li>
-    </ul>
-  </main>
+  </section>
 
 </body>
 </html>
