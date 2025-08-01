@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Survey Form</title>
-</head>
-<body>
+  <head>
+    <title>Calculus Final Exams Table</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <table>
+      <caption>
+        Calculus Final Exam Grades
+      </caption>
 
-  <h1 id="title">Student Survey</h1>
-  <p id="description">Please fill out this short survey to help us improve your experience.</p>
+      <thead>     
+        <tr>
+          <th>Last Name</th>
+          <th>First Name</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
 
-  <form id="survey-form">
+      <tbody>
+        <tr>
+          <td>Davis</td>
+          <td>Alex</td>
+          <td>54</td>
+        </tr>
 
-    <label id="name-label" for="name">Name:</label>
-    <input id="name" type="text" placeholder="Enter your name" required><br><br>
+        <tr>
+          <td>Doe</td>
+          <td>Samantha</td>
+          <td>92</td>
+        </tr>
 
-    <label id="email-label" for="email">Email:</label>
-    <input id="email" type="email" placeholder="Enter your email" required><br><br>
+        <tr>
+          <td>Rodriguez</td>
+          <td>Marcus</td>
+          <td>88</td>
+        </tr>
 
-    <label id="number-label" for="number">Age:</label>
-    <input id="number" type="number" placeholder="Enter your age" min="10" max="99"><br><br>
+        <tr>
+          <td>Thompson</td>
+          <td>Jane</td>
+          <td>77</td>
+        </tr>
 
-    <label for="dropdown">What is your current role?</label>
-    <select id="dropdown">
-      <option value="student">Student</option>
-      <option value="teacher">Teacher</option>
-    </select><br><br>
+        <tr>
+          <td>Williams</td>
+          <td>Natalie</td>
+          <td>83</td>
+        </tr>
+      </tbody>
 
-    <p>Would you recommend this course?</p>
-    <label><input type="radio" name="recommend" value="yes"> Yes</label>
-    <label><input type="radio" name="recommend" value="no"> No</label><br><br>
-
-    <p>What topics are you interested in?</p>
-    <label><input type="checkbox" value="html"> HTML</label>
-    <label><input type="checkbox" value="css"> CSS</label>
-    <label><input type="checkbox" value="javascript"> JavaScript</label><br><br>
-
-    <label for="comments">Any comments or suggestions?</label><br>
-    <textarea id="comments" rows="4" cols="40" placeholder="Your thoughts..."></textarea><br><br>
-
-    <button id="submit" type="submit">Submit</button>
-
-  </form>
-
-</body>
+      <tfoot>
+        <tr>
+          <td colspan="2">Average Grade</td>
+          <td>78.8</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
 </html>
