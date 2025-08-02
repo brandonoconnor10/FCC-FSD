@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Marie Curie Tribute</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main id="main">
-    <h1 id="title">Marie Curie</h1>
-    
-   <figure id="img-div">
-  <img 
-    id="image" 
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Marie_Curie_c1920.jpg/440px-Marie_Curie_c1920.jpg" 
-    alt="Marie Curie portrait"
-  >
-  <figcaption id="img-caption">
-    Marie Curie, the pioneering physicist and chemist, circa 1920.
-  </figcaption>
-</figure>
+  <nav id="navbar">
+    <header>JavaScript Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Arrays">Arrays</a>
+  </nav>
 
-
-    <section id="tribute-info">
-      <p>
-        Marie Curie was the first woman to win a Nobel Prize and remains the only person to win Nobel Prizes in two different sciences—Physics and Chemistry. Her work on radioactivity paved the way for major advances in medicine and nuclear science.
-      </p>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile scripting language used mainly for web development.</p>
+      <p>It allows you to add interactivity to websites, handle events, and manipulate the DOM.</p>
+      <p>JavaScript runs in the browser and on servers using Node.js.</p>
+      <code>console.log("Hello, world!");</code>
+      <p>You can embed JavaScript directly in HTML or load it from external files.</p>
+      <ul>
+        <li>Client-side scripting</li>
+        <li>Lightweight and fast</li>
+        <li>Interpreted language</li>
+      </ul>
     </section>
 
-    <p>
-      <a 
-        id="tribute-link" 
-        href="https://en.wikipedia.org/wiki/Marie_Curie" 
-        target="_blank"
-      >
-        Learn more about Marie Curie
-      </a>
-    </p>
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values.</p>
+      <p>You can declare them using var, let, or const.</p>
+      <code>let name = "Alice";</code>
+      <p>`let` and `const` were introduced in ES6.</p>
+      <code>const PI = 3.14;</code>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are blocks of code designed to perform a task.</p>
+      <p>They can take parameters and return values.</p>
+      <code>function add(a, b) { return a + b; }</code>
+      <p>Functions help you reuse code.</p>
+      <ul>
+        <li>Named functions</li>
+        <li>Arrow functions</li>
+        <li>Callback functions</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops allow you to repeat blocks of code.</p>
+      <p>Types of loops: for, while, do...while.</p>
+      <code>for (let i = 0; i < 5; i++) { console.log(i); }</code>
+      <p>Be careful of infinite loops.</p>
+      <code>while (condition) { /* code */ }</code>
+    </section>
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <p>Arrays are used to store multiple values in a single variable.</p>
+      <p>They are zero-indexed and can hold different data types.</p>
+      <code>let fruits = ["apple", "banana", "cherry"];</code>
+      <p>Common methods include push(), pop(), and map().</p>
+      <ul>
+        <li>Indexed collection</li>
+        <li>Mutable</li>
+        <li>Length property</li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
